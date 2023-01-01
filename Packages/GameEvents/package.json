@@ -14,8 +14,14 @@
     "keyword3"
   ],
   "author": {
-    "name": "Unity",
-    "email": "unity@example.com",
-    "url": "https://www.unity3d.com"
-  }
+    "name": "Ra-Coding",
+    "url": "https://github.com/Ra-Coding"
+  },
+  "samples": [
+        {
+            "displayName": "So Game Events Sample",
+            "description": "Contains sample so game events",
+            "path": "Samples~/SOGameEvents"
+        }
+    ]
 }
