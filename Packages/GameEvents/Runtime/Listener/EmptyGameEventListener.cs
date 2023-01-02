@@ -6,6 +6,10 @@ namespace RaCoding.GameEvents
     [System.Serializable]
     public class EmptyGameEventListener : GameEventListener<EmptyType> 
     {
+        public EmptyGameEventListener() : base() {}
+        
+        public EmptyGameEventListener(IRegisterListener registerListener)  : base(registerListener) {}
+
         [SerializeField] private EmptyGameEvent emptyTypeEvent;
         [SerializeField] private EmptyUnityEvent emptyTypeResponse;
 

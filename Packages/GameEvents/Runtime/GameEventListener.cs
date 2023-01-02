@@ -5,18 +5,26 @@ namespace RaCoding.GameEvents
 {
     public abstract class GameEventListener<T> : IGameEventListener<T>
     {
+        public GameEventListener() {}
+
+        public GameEventListener(IRegisterListener registerListener) 
+        {
+            registerListener.onEnableGameEventListener += Register;
+            registerListener.onDisableGameEventListener += Unregister;
+        }
+
         [Tooltip("Event to register with.")]
         public abstract GameEvent<T> Event { get; }
 
         [Tooltip("Response to invoke when Event is raised.")]
         public abstract UnityEvent<T> Response { get; }
 
-        private void OnEnable()
+        public void Register()
         {
             Event.RegisterListener(this);
         }
 
-        private void OnDisable()
+        public void Unregister()
         {
             Event.UnregisterListener(this);
         }
