@@ -201,8 +201,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1283727019}
   - component: {fileID: 1283727020}
+  - component: {fileID: 1283727021}
   m_Layer: 0
-  m_Name: Test
+  m_Name: ExampleGameEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,11 +233,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 1283727017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 150708227045c4245a58336934cfcc2b, type: 3}
+  m_Script: {fileID: 11500000, guid: 41bd9269b55bc354985f5cdeaccd97a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: eb0029463b5c4f54dbd88d17f246ca1f, type: 2}
+  gameEvent: {fileID: 11400000, guid: d223ebc7d232a94419b8cf49b3f1d659, type: 2}
   text: {fileID: 1756548257}
+  listener:
+    emptyTypeEvent: {fileID: 11400000, guid: d223ebc7d232a94419b8cf49b3f1d659, type: 2}
+    emptyTypeResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1283727020}
+          m_TargetAssemblyTypeName: RaCoding.GameEvents.ExampleGameEvent, de.ra-coding.game.events.samples
+          m_MethodName: ShowText
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1283727021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283727017}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fdc304c1568b44b9ea591bcaeb83d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listener:
+    emptyTypeEvent: {fileID: 11400000, guid: d223ebc7d232a94419b8cf49b3f1d659, type: 2}
+    emptyTypeResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1283727020}
+          m_TargetAssemblyTypeName: RaCoding.GameEvents.ExampleGameEvent, de.ra-coding.game.events.samples
+          m_MethodName: ShowText
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1756548257
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,8 +20,8 @@
   "samples": [
         {
             "displayName": "So Game Events Sample",
-            "description": "Contains sample so game events",
-            "path": "Samples~/SOGameEvents"
+            "description": "Contains sample simple so game events",
+            "path": "Samples~/SimpleSOGameEvent"
         }
     ]
 }
