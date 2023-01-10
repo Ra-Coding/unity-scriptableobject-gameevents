@@ -8,6 +8,7 @@ Install with the Unity Package Manager: https://github.com/Ra-Coding/unity-scrip
 
 ## Built-in GameEvents
 
+- EmptyType
 - bool
 - byte
 - short
