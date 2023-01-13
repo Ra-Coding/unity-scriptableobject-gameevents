@@ -21,3 +21,4 @@ Install with the Unity Package Manager: https://github.com/Ra-Coding/unity-scrip
 - GameObject
 - Transform
 - Color
+- AudioClip
