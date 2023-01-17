@@ -156,7 +156,7 @@
       "url": "https://packages.unity.com"
     },
     "de.ra-coding.game.events": {
-      "version": "file:GameEvents",
+      "version": "file:SOGameEvents",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
