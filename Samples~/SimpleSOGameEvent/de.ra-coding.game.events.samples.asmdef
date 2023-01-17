@@ -1,0 +1,16 @@
+{
+    "name": "de.ra-coding.game.events.samples",
+    "rootNamespace": "RaCoding.GameEvents",
+    "references": [
+        "GUID:042c52a78fc905a448013608adcece9a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

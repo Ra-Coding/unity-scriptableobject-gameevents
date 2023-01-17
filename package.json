@@ -1,0 +1,26 @@
+{
+  "name": "de.ra-coding.game.events",
+  "version": "1.0.2",
+  "displayName": "SO Game Events",
+  "description": "This package includes ScriptableObject game events.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://github.com/Ra-Coding/unity-scriptableobject-gameevents",
+  "changelogUrl": "https://github.com/Ra-Coding/unity-scriptableobject-gameevents",
+  "licensesUrl": "https://github.com/Ra-Coding/unity-scriptableobject-gameevents/blob/main/LICENSE",
+  "keywords": [
+    "ScriptableObject",
+    "GameEvents"
+  ],
+  "author": {
+    "name": "Ra-Coding",
+    "url": "https://github.com/Ra-Coding"
+  },
+  "samples": [
+        {
+            "displayName": "So Game Events Sample",
+            "description": "Contains sample simple so game events",
+            "path": "Samples~/SimpleSOGameEvent"
+        }
+    ]
+}
