@@ -1,21 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using UnityEditor;
 
 namespace RaCoding.GameEvents
 {
-    public class UIntGameEventEditor : MonoBehaviour
+    [CustomEditor(typeof(GameEvent<uint>), editorForChildClasses: true)]
+    public class UIntGameEventEditor : GameEventEditor<uint>
     {
-        // Start is called before the first frame update
-        void Start()
+        protected override uint GetValue()
         {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
+            return (uint)EditorGUILayout.IntField(1);
         }
     }
 }
