@@ -15,6 +15,7 @@ Install with the Unity Package Manager: https://github.com/Ra-Coding/unity-scrip
 - int
 - long
 - float
+- double
 - char
 - string
 - Vector2
