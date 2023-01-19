@@ -21,5 +21,6 @@ Install with the Unity Package Manager: https://github.com/Ra-Coding/unity-scrip
 - Vector3
 - GameObject
 - Transform
+- Quaternion
 - Color
 - AudioClip
