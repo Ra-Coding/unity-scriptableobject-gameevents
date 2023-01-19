@@ -13,6 +13,7 @@ Install with the Unity Package Manager: https://github.com/Ra-Coding/unity-scrip
 - byte
 - short
 - int
+- uint
 - long
 - float
 - char
