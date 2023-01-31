@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public FloatGameEventListener() : base() {}
         
-        public FloatGameEventListener(IRegisterListener registerListener)  : base(registerListener) {}
+        public FloatGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
 
         [SerializeField] private FloatGameEvent floatEvent;
         [SerializeField] private FloatUnityEvent floatResponse;

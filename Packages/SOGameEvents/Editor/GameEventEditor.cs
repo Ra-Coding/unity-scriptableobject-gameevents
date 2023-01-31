@@ -15,6 +15,8 @@ namespace RaCoding.GameEvents
             {
                 e.Raise(t);
             }
+
+            GUILayout.Label("Used by listeners in following GameObjects: " + e.EventListenersParentNames());
         }
 
         protected abstract T GetValue();

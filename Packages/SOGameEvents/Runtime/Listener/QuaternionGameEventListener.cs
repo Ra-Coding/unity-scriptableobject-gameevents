@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public QuaternionGameEventListener() : base() { }
 
-        public QuaternionGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
+        public QuaternionGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
 
         [SerializeField] private QuaternionGameEvent quaternionEvent;
         [SerializeField] private QuaternionUnityEvent quaternionResponse;
