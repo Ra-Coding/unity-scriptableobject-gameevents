@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public TransformGameEventListener() : base() {}
         
-        public TransformGameEventListener(IRegisterListener registerListener)  : base(registerListener) {}
+        public TransformGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
 
         [SerializeField] private TransformGameEvent transformEvent;
         [SerializeField] private TransformUnityEvent transformResponse;
