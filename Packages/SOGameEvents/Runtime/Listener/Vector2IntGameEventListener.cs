@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public Vector2IntGameEventListener() : base() { }
 
-        public Vector2IntGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
+        public Vector2IntGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
 
         [SerializeField] private Vector2IntGameEvent vector2intEvent;
         [SerializeField] private Vector2IntUnityEvent vector2intResponse;

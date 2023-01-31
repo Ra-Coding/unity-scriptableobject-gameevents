@@ -5,10 +5,38 @@ namespace RaCoding.GameEvents
 {
     public abstract class GameEventListener<T> : IGameEventListener<T>
     {
+        private GameObject _parentGameObject;
+        public GameObject ParentGameObject
+        {
+            private get { return _parentGameObject; }
+            set
+            {
+                if (value != null && _parentGameObject == null)
+                {
+                    _parentGameObject = value;
+                }
+            }
+        }
+
+        public string ParentName
+        {
+            get 
+            { 
+                if (_parentGameObject != null)
+                {
+                    return _parentGameObject.name;
+                }
+                return "Parent not set!";
+            }
+        }
+
+        // Constructor for ComponentGameEventListeners
         public GameEventListener() {}
 
-        public GameEventListener(IRegisterListener registerListener) 
+        // Constructor for GameEventListener used as a field
+        public GameEventListener(IRegisterListener registerListener, GameObject parent) 
         {
+            ParentGameObject = parent;
             registerListener.onEnableGameEventListener += Register;
             registerListener.onDisableGameEventListener += Unregister;
         }

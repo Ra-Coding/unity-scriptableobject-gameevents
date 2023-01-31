@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 namespace RaCoding.GameEvents
@@ -23,6 +24,16 @@ namespace RaCoding.GameEvents
         {
             if (eventListeners.Contains(listener))
                 eventListeners.Remove(listener);
+        }
+
+        public string EventListenersParentNames()
+        {
+            StringBuilder sb = new();
+            for (int i = 0; i < eventListeners.Count; i++)
+            {
+                sb.Append(eventListeners[i].ParentName + " ");
+            }
+            return sb.ToString();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public AudioClipGameEventListener() : base() {}
         
-        public AudioClipGameEventListener(IRegisterListener registerListener)  : base(registerListener) {}
+        public AudioClipGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
 
         [SerializeField] private AudioClipGameEvent audioClipEvent;
         [SerializeField] private AudioClipUnityEvent audioClipResponse;

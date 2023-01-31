@@ -7,5 +7,10 @@ namespace RaCoding.GameEvents
         public void Unregister();
         
         public void OnEventRaised(T t);
+
+        public string ParentName
+        {
+            get;
+        }
     }
 }
