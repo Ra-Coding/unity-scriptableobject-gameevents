@@ -34,9 +34,8 @@ namespace RaCoding.GameEvents
         public GameEventListener() {}
 
         // Constructor for GameEventListener used as a field
-        public GameEventListener(IRegisterListener registerListener, GameObject parent) 
+        public GameEventListener(IRegisterListener registerListener) 
         {
-            ParentGameObject = parent;
             registerListener.onEnableGameEventListener += Register;
             registerListener.onDisableGameEventListener += Unregister;
         }
