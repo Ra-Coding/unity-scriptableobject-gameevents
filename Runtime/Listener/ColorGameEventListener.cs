@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public ColorGameEventListener() : base() {}
         
-        public ColorGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
+        public ColorGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
 
         [SerializeField] private ColorGameEvent colorEvent;
         [SerializeField] private ColorUnityEvent colorResponse;

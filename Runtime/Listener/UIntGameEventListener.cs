@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public UIntGameEventListener() : base() { }
 
-        public UIntGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
+        public UIntGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
 
         [SerializeField] private UIntGameEvent uintEvent;
         [SerializeField] private UIntUnityEvent uintResponse;

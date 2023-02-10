@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public LongGameEventListener() : base() {}
         
-        public LongGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
+        public LongGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
 
         [SerializeField] private LongGameEvent longEvent;
         [SerializeField] private LongUnityEvent longResponse;

@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public DoubleGameEventListener() : base() { }
 
-        public DoubleGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
+        public DoubleGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
 
         [SerializeField] private DoubleGameEvent doubleEvent;
         [SerializeField] private DoubleUnityEvent doubleResponse;
