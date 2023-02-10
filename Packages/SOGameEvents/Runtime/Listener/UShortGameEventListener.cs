@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public UShortGameEventListener() : base() { }
 
-        public UShortGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
+        public UShortGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
 
         [SerializeField] private UShortGameEvent ushortEvent;
         [SerializeField] private UShortUnityEvent ushortResponse;

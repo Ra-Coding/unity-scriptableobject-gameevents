@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public EmptyGameEventListener() : base() {}
         
-        public EmptyGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
+        public EmptyGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
 
         [SerializeField] private EmptyGameEvent emptyTypeEvent;
         [SerializeField] private EmptyUnityEvent emptyTypeResponse;

@@ -8,7 +8,7 @@ namespace RaCoding.GameEvents
     {
         public CharGameEventListener() : base() {}
         
-        public CharGameEventListener(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) { }
+        public CharGameEventListener(IRegisterListener registerListener) : base(registerListener) { }
 
         [SerializeField] private CharGameEvent charEvent;
         [SerializeField] private CharUnityEvent charResponse;
