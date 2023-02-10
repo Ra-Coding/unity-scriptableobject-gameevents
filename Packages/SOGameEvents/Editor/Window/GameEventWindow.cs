@@ -197,7 +197,7 @@ namespace RaCoding.GameEvents
                 outfile.WriteLine(TAB + "{");
                 outfile.WriteLine(TAB + TAB + "public " + className + "() : base() {}");
                 outfile.WriteLine("");
-                outfile.WriteLine(TAB + TAB + "public " + className + "(IRegisterListener registerListener, GameObject gameObject) : base(registerListener, gameObject) {}");
+                outfile.WriteLine(TAB + TAB + "public " + className + "(IRegisterListener registerListener) : base(registerListener) {}");
                 outfile.WriteLine("");
                 outfile.WriteLine(TAB + TAB + "[SerializeField] private " + gameeventName + " " + variableNamePrefix + "Event;");
                 outfile.WriteLine(TAB + TAB + "[SerializeField] private " + unityeventName + " " + variableNamePrefix + "Response;");
