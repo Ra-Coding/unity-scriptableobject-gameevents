@@ -1,0 +1,8 @@
+using UnityEngine.Events;
+using UnityEngine;
+
+namespace RaCoding.GameEvents
+{
+    [System.Serializable]
+    public class LongArrayUnityEvent : UnityEvent<long[]> {}
+}
