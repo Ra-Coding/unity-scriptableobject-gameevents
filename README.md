@@ -31,3 +31,4 @@ Install with the Unity Package Manager: https://github.com/Ra-Coding/unity-scrip
 - Quaternion
 - Color
 - AudioClip
+- Sprite
